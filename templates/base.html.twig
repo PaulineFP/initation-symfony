@@ -8,7 +8,17 @@
         {% block stylesheets %}
             <!-- CSS only -->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+            <!-----css slider-------->
+            <!-- Link to the file hosted on your server, -->
+            <link rel="stylesheet" href="path-to-the-file/splide.min.css">
+
+            <!-- or the one installed in node_modules directory, -->
+            <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+            <!-- or the reference on CDN -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
             {{ encore_entry_link_tags('app') }}
+
         {% endblock %}
     </head>
     <body>

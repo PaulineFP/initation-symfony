@@ -6,8 +6,23 @@
 {% block body %}
     <div>
         <div style="height: 1000px;">
-            <h1>home page</h1>
-            <a href="{{ path('contact') }}">me contacter</a>
+
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
-{% endblock %}
+    <script>
+        import Splide from '@splidejs/splide';
+
+        new Splide( '.splide' ).mount();
+    </script>
+
+*{% endblock %}
